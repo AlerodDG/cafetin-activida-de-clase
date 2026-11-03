@@ -117,6 +117,7 @@ body {
     margin-bottom: 15px;
 }
 
+/* modificacion: el grid se mantiene flexible con auto-fill para acomodar automáticamente los nuevos productos añadidos */
 .grid-productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -166,7 +167,7 @@ body {
     margin-top: 8px;
 }
 
-/* Retiro en Local */
+/* retiro en local */
 .retiro-container {
     max-width: 1100px;
     margin: 40px auto;
@@ -190,7 +191,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* footer o pie de pagina estilo banner oscuro */
+/* footer o pie de pagina estilo banner cafe */
 .footer {
     background-color: #402c1e;
     color: white;
