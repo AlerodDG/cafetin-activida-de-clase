@@ -1,0 +1,229 @@
+/* configuración general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f4ed; /* color de fondo beige claro */
+    color: #2b2b2b;
+}
+
+/* parte superior */
+.navbar {
+    background-color:  #332720; /* marrón */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-titulo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.logo-subtitulo {
+    font-size: 0.6rem;
+    color: #bbb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-tienda {
+    background-color: #488214; /* verde*/
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* encabezado principal */
+.hero {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+.sub-hero {
+    color: #488214;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 5px 0;
+}
+
+.hero p {
+    color: #666;
+}
+
+/* filtros por categoría */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filtros button {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.filtros button.active {
+    background-color: #488214;
+    color: white;
+    border-color: #488214;
+}
+
+/* catálogo de productos */
+.catalogo {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contador-productos {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.img-contenedor {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-info {
+    padding: 15px;
+}
+
+.categoria {
+    color: #488214;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.tarjeta-info h3 {
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+.precio {
+    font-weight: bold;
+    color: #1c130d;
+    margin-top: 8px;
+}
+
+/* Retiro en Local */
+.retiro-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.retiro-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #eaeaea;
+}
+
+.icon-map {
+    background-color: #e8f5e9;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+/* footer o pie de pagina estilo banner oscuro */
+.footer {
+    background-color: #402c1e;
+    color: white;
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #332720;
+}
+
+.footer-seccion h4 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
+.footer-seccion p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.footer-copy {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
